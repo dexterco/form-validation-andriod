@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="city_array">
+        <item>Lahore</item>
+        <item>Karachi</item>
+        <item>Multan</item>
+        <item>Islamabad</item>
+        <item>Murree</item>
+        <item>NewYork</item>
+    </string-array>
+</resources>

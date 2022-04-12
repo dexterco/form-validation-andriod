@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A5341"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/nabeel" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Required Fields"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="Enter First Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#D3D2D2" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:hint="Enter Last Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#D3D2D2" />
+
+    <Switch
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:showText="true"
+        android:text="Choose Gender *"
+        android:textColor="@color/white"
+        android:textOff="male"
+        android:textOn="female"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cpro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender"
+        android:layout_marginLeft="30dp"
+        android:text="Choose Your Degree Program *"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <RadioButton
+        android:id="@+id/bs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cpro"
+        android:layout_marginLeft="35dp"
+        android:text="BS"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <RadioButton
+        android:id="@+id/ms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cpro"
+        android:layout_alignLeft="@+id/bs"
+        android:layout_marginLeft="90dp"
+        android:text="MS"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cpre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bs"
+        android:layout_marginLeft="30dp"
+        android:text="Choose Your Previous Education *"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/matric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cpre"
+        android:layout_marginLeft="30dp"
+        android:text="Matric"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/fsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/matric"
+        android:layout_marginLeft="30dp"
+        android:text="F.S.C"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/cbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fsc"
+        android:layout_marginLeft="30dp"
+        android:text="BS"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbs"
+        android:layout_marginLeft="30dp"
+        android:text="Choose City Name *"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/citylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cc"
+        android:entries="@array/city_array"
+        android:layout_marginLeft="28dp"
+        />
+
+    <Button
+        android:id="@+id/vbtn"
+        android:layout_width="350dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/citylist"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#009688"
+        android:text="validation"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

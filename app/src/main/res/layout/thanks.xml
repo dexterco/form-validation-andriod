@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A5341">
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks For Submitting the Form"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Details:"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/thanks"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nabeel Yousaf"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/dt"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply For BS"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/gender"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/pe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Education is Matric , FSC"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/apply"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City Gujranwala"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/pe"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_below="@id/city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#009688"
+        android:textColor="@color/white"/>
+
+
+
+
+
+
+</RelativeLayout>
